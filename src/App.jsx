@@ -23,20 +23,18 @@ function App() {
         </ul>
       </nav>
 
-      <section className='tech-stack'>
-        <h2>TECH & TOOLS</h2>
-        <ul>
-          <li>React</li>
-          <li>JavaScript</li>
-          <li>HTML5</li>
-          <li>CSS3</li>
-          <li>Git</li>
-          <li>Express.js</li>
-          <li>Node.js</li>
-          <li>Webpack</li>
-          <li>Figma</li>
-        </ul>
-      </section>
+      <h2>TECH & TOOLS</h2>
+      <div className='tech-stack-items'>
+          <div>React</div>
+          <div>JavaScript</div>
+          <div>HTML5</div>
+          <div>CSS3</div>
+          <div>Git</div>
+          <div>Express.js</div>
+          <div>Node.js</div>
+          <div>Webpack</div>
+          <div>Figma</div>
+      </div>
     </div>
   )
 }

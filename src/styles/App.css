@@ -1,13 +1,14 @@
 .home {
   display: grid;
-  grid-template-rows: 80vh 20vh;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 85vh 10vh 10vh;
+  grid-template-columns: 1fr 2fr;
 }
 
 .intro {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  justify-self: end;
   width: 250px;
   grid-row: 1 / 2 ;
 }
@@ -23,7 +24,7 @@
 }
 
 .home nav {
-  font-size: 140px;
+  font-size: 150px;
   display: grid;
   justify-content: flex-start;
   align-items: flex-end;
@@ -36,15 +37,22 @@
   padding: 0;
 }
 
-.tech-stack {
-  grid-column: 1 / -1;
-  display: grid;
-  text-align: center;
-  width: 100%;
+.home h2 {
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-end;
+  align-self: center;
+  padding-top: 30px;
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
 }
 
-.tech-stack h2 {
-  font-size: 16px;
+.tech-stack-items {
+  display: flex;
+  justify-content: center;
+  gap: 38px;
+  grid-column: 1 / -1;
+  grid-row: 3 / -1;
 }
 
 .tech-stack li {

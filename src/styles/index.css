@@ -14,11 +14,13 @@ body {
 h1, p {
     font-family: var(--MAIN-FONT);
     margin: 0;
+    padding: 0;
 }
 
 h2, li {
     font-family: var(--ACCENT-FONT);
     margin: 0;
+    padding: 0;
 }
 
 li {
