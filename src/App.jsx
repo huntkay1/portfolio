@@ -8,10 +8,10 @@ function App() {
     <div className='home'>
       <section className='intro'>
         <h1>KAYLA HUNT</h1>
-        <p>Web Developer and Problem Solver.</p>
+        <p>Web Developer & Problem Solver.</p>
         <p>
           Passionate about building enjoyable 
-          experiences for users and learning cool new tricks. 
+          experiences for users and learning cool new things. 
          </p>
       </section>
 
