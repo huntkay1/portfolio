@@ -16,7 +16,7 @@ function App() {
       <nav>
         <ul>
           <li className='navlink'>
-          <NavLink to='/'>WORK</NavLink>
+          <NavLink to='/work'>WORK</NavLink>
           </li>
           <li className='navlink'>
           <NavLink to='/about'>ABOUT</NavLink>
