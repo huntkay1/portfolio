@@ -1,9 +1,7 @@
-import './styles/App.css'
-
+import '../styles/App.css'
+import { NavLink } from 'react-router-dom';
 
 function App() {
-
-
   return (
     <div className='home'>
       <section className='intro'>
@@ -17,9 +15,15 @@ function App() {
 
       <nav>
         <ul>
-         <li>WORK</li>
-         <li>ABOUT</li>
-         <li>CONTACT</li>
+          <li className='navlink'>
+          <NavLink to='/'>WORK</NavLink>
+          </li>
+          <li className='navlink'>
+          <NavLink to='/about'>ABOUT</NavLink>
+          </li>
+          <li className='navlink'>
+          <NavLink to='/contact'>CONTACT</NavLink>
+          </li>
         </ul>
       </nav>
 

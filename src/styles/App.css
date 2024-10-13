@@ -32,7 +32,7 @@
   padding-left: 40px;
 }
 
-nav li:hover {
+.navlink a:hover {
   color: transparent;
   -webkit-text-stroke-width: 4px;
   -webkit-text-stroke-color: var(--BLUE-COLOR);
@@ -62,11 +62,6 @@ nav li:hover {
   grid-row: 3 / -1;
 }
 
-.diamond {
-  position: absolute;
-  top: 50px;
-  left: 100px;
-}
 
 
 
