@@ -1,9 +1,10 @@
 import '../styles/Work.css'
+import { useState } from 'react'
 
 function Work() {
     const workData = [
         {
-            name: 'Leafy Greens',
+            name: 'LEAFY GREENS',
             description: 'Ecommerce site for a fictional plant shop',
             tech: ['React', 'CSS', 'Bootstrap', 'Express.js'],
             website: '',
@@ -11,7 +12,7 @@ function Work() {
             img: ''
         },
         {
-            name: 'Pokemon Memory Game',
+            name: 'POKEMON MEMORY GAME',
             description: 'Card game powered by the PokeAPI',
             tech: ['React', 'CSS'],
             website: '',
@@ -19,38 +20,39 @@ function Work() {
             img: ''
         }, 
         {
-            name: 'Resume Builder',
+            name: 'RESUME BUILDER',
             description: 'Download a custom resume with the given template',
             tech: ['React', 'CSS'],
             website: '',
             github: '',
             img: ''
         }, 
-        {
-            name: 'Weather App',
-            description: 'Discover the weather in your area',
-            tech: ['JavaScript', 'CSS'],
-            website: '',
-            github: '',
-            img: ''
-        }
     ]
-    return(
+
+    const [expandedIndex, setExpandedIndex] = useState(null);
+
+    const handleMouseEnter = (index) => setExpandedIndex(index);
+    const handleMouseLeave = () => setExpandedIndex(null);
+
+    return (
         <div>
-            <h2 className='page-header'>WORK</h2>
             <div className='work-container'>
                 {workData.map((item, index) => 
                     <div key={index} className='card'>
+
                         <h3>{item.name}</h3>
-                        <p>{item.description}</p>
-                        <ul className='tech-list'>
+                        <p className='hidden-content'>{item.description}</p>
+                        <ul className='tech-list hidden-content'>
                             {item.tech.map((tech, index) => 
                                 <li key={index}>{tech}</li>
                             )}
                         </ul>
+
                     </div>
                 )}
             </div>
+
+            <h2 className='page-header'>WORK</h2>
         </div>
     )
 }
