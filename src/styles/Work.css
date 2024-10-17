@@ -1,12 +1,24 @@
-.page-header {
-    color: var(--BROWN-COLOR);
-    font-size: 150px;
+
+
+.work-headers {
     display: flex;
-    justify-content: flex-end;
-    padding-right: 80px;
-    margin-top: 200px;
+    align-items: center;
+    justify-content: space-around;
+    margin: 200px 10vw;
 }
 
+.work-headers h2 {
+    color: var(--BROWN-COLOR);
+    font-size: 200px;
+}
+
+.work-copy {
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+}
 
 .work-container {
     display: flex;
@@ -15,7 +27,7 @@
 }
 
 .card {
-    background-color: var(--BROWN-COLOR);
+    background-color: #E9EFF4;
     width: 300px;
     height: 300px;
     transition: width 750ms ease;
@@ -28,12 +40,13 @@
 .card h3 {
     font-size: 2.5vw;
     align-self: flex-start;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 5px;
+    font-family: var(--ACCENT-FONT)
 }
 
 .card h3, .card p, .card li {
-    color: #FFFFF2;
+    color: var(--BROWN-COLOR);
 }
 
 .hidden-content {
@@ -51,16 +64,13 @@
 
 .card:hover .tech-list li {
     margin-right: 20px;
+    font-family: var(--MAIN-FONT);
+    font-weight: 550;
 }
 
 .card:hover .tech-list {
     justify-self: left;
     padding: 0;
-}
-
-.card:hover .card {
-    display: flex;
-    justify-content: space-between;
 }
 
 .card img {
