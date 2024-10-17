@@ -1,5 +1,8 @@
 import '../styles/Work.css'
 import { useState } from 'react'
+import Leafy from '../assets/leafy.png'
+import Pokemon from '../assets/pokemon.png'
+import Resume from '../assets/resume.png'
 
 function Work() {
     const workData = [
@@ -9,7 +12,7 @@ function Work() {
             tech: ['React', 'CSS', 'Bootstrap', 'Express.js'],
             website: '',
             github: '',
-            img: ''
+            img: Leafy
         },
         {
             name: 'POKEMON MEMORY GAME',
@@ -17,7 +20,7 @@ function Work() {
             tech: ['React', 'CSS'],
             website: '',
             github: '',
-            img: ''
+            img: Pokemon
         }, 
         {
             name: 'RESUME BUILDER',
@@ -25,28 +28,25 @@ function Work() {
             tech: ['React', 'CSS'],
             website: '',
             github: '',
-            img: ''
+            img: Resume
         }, 
     ]
-
-    const [expandedIndex, setExpandedIndex] = useState(null);
-
-    const handleMouseEnter = (index) => setExpandedIndex(index);
-    const handleMouseLeave = () => setExpandedIndex(null);
 
     return (
         <div>
             <div className='work-container'>
                 {workData.map((item, index) => 
                     <div key={index} className='card'>
-
-                        <h3>{item.name}</h3>
-                        <p className='hidden-content'>{item.description}</p>
-                        <ul className='tech-list hidden-content'>
-                            {item.tech.map((tech, index) => 
-                                <li key={index}>{tech}</li>
-                            )}
-                        </ul>
+                        <div className='card-info4'>
+                            <h3>{item.name}</h3>
+                            <p className='hidden-content'>{item.description}</p>
+                            <ul className='tech-list hidden-content'>
+                                {item.tech.map((tech, index) => 
+                                    <li key={index}>{tech}</li>
+                                )}
+                            </ul>
+                        </div>
+                        <img src={item.img} className='hidden-content'></img>
 
                     </div>
                 )}

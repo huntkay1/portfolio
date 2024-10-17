@@ -18,7 +18,7 @@
     background-color: var(--BROWN-COLOR);
     width: 300px;
     height: 300px;
-    transition: width 750ms ease-in-out;
+    transition: width 750ms ease;
     margin: 0 20px;
     border-radius: 50px;
     padding: 15px 50px;
@@ -28,8 +28,8 @@
 .card h3 {
     font-size: 2.5vw;
     align-self: flex-start;
-    font-family: var(--ACCENT-FONT);
     letter-spacing: 1px;
+    margin-bottom: 5px;
 }
 
 .card h3, .card p, .card li {
@@ -38,6 +38,7 @@
 
 .hidden-content {
     display: none;
+    transition: display 750ms ease-in-out;
 }
 
 .card:hover {
@@ -47,6 +48,28 @@
 .card:hover .hidden-content {
     display: flex;
 }
+
+.card:hover .tech-list li {
+    margin-right: 20px;
+}
+
+.card:hover .tech-list {
+    justify-self: left;
+    padding: 0;
+}
+
+.card:hover .card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card img {
+    border-radius: 35px;
+    width: 50%;
+    margin-left: 40px;
+}
+
+
 
 
 
