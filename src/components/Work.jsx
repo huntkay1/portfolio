@@ -58,8 +58,8 @@ function Work() {
             
             <div className='work-headers'>
                 <div className='work-copy'>
-                    <p>This is a collection of the projects that I am most proud of.</p>
-                    <p>I am consistently adding cool new projects to this list and learning new things.</p>
+                    <p>This is a collection of the projects that I'm most proud of.</p>
+                    <p>I'm consistently adding fun new projects to this list as I keep experimenting and gain more skills!</p>
                 </div>
                 <h2 className='page-header'>WORK</h2>
             </div>
