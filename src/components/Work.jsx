@@ -1,10 +1,11 @@
 import '../styles/Work.css'
-import { useState } from 'react'
 import Leafy from '../assets/leafy.png'
 import Pokemon from '../assets/pokemon.png'
 import Resume from '../assets/resume.png'
+import { NavLink } from 'react-router-dom';
 
 function Work() {
+
     const workData = [
         {
             name: 'LEAFY GREENS',
@@ -34,6 +35,9 @@ function Work() {
 
     return (
         <div>
+            <NavLink to='/'>
+                <h3 className='home-button'>HOME</h3>
+            </NavLink>
             <div className='work-container'>
                 {workData.map((item, index) => 
                     <div key={index} className='card'>
@@ -46,7 +50,7 @@ function Work() {
                                 )}
                             </ul>
                         </div>
-                        <img src={item.img} className='hidden-content'></img>
+                        <div className='card-img hidden-content' style={{backgroundImage: `url(${item.img})` }}></div>
 
                     </div>
                 )}

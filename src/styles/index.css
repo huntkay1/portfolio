@@ -3,10 +3,8 @@
 :root {
     --ACCENT-FONT: 'Ultra', serif;
     --MAIN-FONT: 'IBM Plex Sans', serif;
-    /* --BLUE-COLOR: #013D80; */
     --BLUE-COLOR: #3C4D7F;
-    /* --BROWN-COLOR: #62432C; */
-    --BROWN-COLOR: #324E66;
+    --GREEN-COLOR: rgba(0,103,79);
 }
 
 body {
@@ -20,7 +18,7 @@ h1, p, div {
     font-family: var(--MAIN-FONT);
     margin: 0;
     padding: 0;
-    color: var(--BLUE-COLOR);
+    color: var(--BROWN-COLOR);
 }
 
 h2, li {
