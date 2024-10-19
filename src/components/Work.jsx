@@ -19,7 +19,7 @@ function Work() {
         },
         {
             name: 'MEMORY GAME',
-            description: 'Card game powered by the PokeAPI',
+            description: 'Memory card game powered by PokeAPI',
             tech: ['React', 'CSS'],
             website: 'https://rad-bienenstitch-6bdaa4.netlify.app/',
             github: 'https://github.com/huntkay1/memory-game-app',
