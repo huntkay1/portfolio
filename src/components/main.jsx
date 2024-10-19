@@ -2,6 +2,7 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import Work from './Work.jsx'
+import About from './About.jsx'
 import '../styles/index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
 
@@ -13,6 +14,10 @@ const routes = [
   {
     path: "/work",
     element: <Work />
+  },
+  {
+    path: "/about",
+    element: <About />
   }
 ]
 
