@@ -45,7 +45,7 @@
 
 /* Card Styles */
 .card {
-    background-color: rgba(0, 103, 79, 0.1);
+    background-color: rgba(4, 89, 77, 0.1);
     width: 28vw;
     height: 350px;
     margin: 0 20px;
@@ -53,22 +53,29 @@
     border-radius: 50px;
     display: flex;
     justify-content: space-between;
+    gap: 50px;
     transition: width 750ms ease;
     overflow: hidden;
     min-width: 0;
 }
+
 
 .card:hover {
     width: 100%;
 }
 
 /* Card Content */
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
 .card h3 {
     font-size: 2.5vw;
     letter-spacing: 1px;
     margin: 10px 0 5px;
     font-family: var(--ACCENT-FONT);
-    width: 200px;
 }
 
 .card h3, 
@@ -104,9 +111,27 @@
     width: 100%;
     max-width: 500px;
     height: 100%;
-    margin-left: 40px;
     border-radius: 35px;
     background: center / cover no-repeat;
+}
+
+.project-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 70px;
+}
+
+.project-links a {
+    font-weight: 500;
+    font-family: var(--MAIN-FONT);
+    color: var(--GREEN-COLOR);
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    gap: 5px;
 }
 
 
