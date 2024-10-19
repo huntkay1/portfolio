@@ -1,12 +1,5 @@
 .home-button {
-    width: 25px;
-    transform: rotate(270deg);
-    position: absolute;
-    top: 45px;
-    left: 20px;
-    font-weight: 650;
     color: var(--GREEN-COLOR);
-    font-family: var(--MAIN-FONT);
 }
 
 /* Headers */
@@ -20,7 +13,6 @@
 }
 
 .work-headers h2 {
-    font-size: 200px;
     color: var(--GREEN-COLOR);
 }
 

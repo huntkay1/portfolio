@@ -1,0 +1,33 @@
+.page-header {
+    color: var(--PURPLE-COLOR);
+    margin-left: 50px;
+    margin-top: 100px;
+}
+
+.home-button {
+    color: var(--PURPLE-COLOR);
+}
+
+.me {
+    height: 450px;
+    width: 400px;
+    background-image: url('../assets/Me.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 200px 200px 5px 5px;
+    background-position: 100% 50%;
+}
+
+.about-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    margin: 20px 15vw;
+}
+
+.about-copy {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+

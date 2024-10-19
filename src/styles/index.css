@@ -5,6 +5,7 @@
     --MAIN-FONT: 'IBM Plex Sans', serif;
     --BLUE-COLOR: #3C4D7F;
     --GREEN-COLOR: rgba(4, 89, 77);
+    --PURPLE-COLOR: #796D93;
 }
 
 body {
@@ -36,5 +37,23 @@ a {
     text-decoration: none;
     color: var(--BLUE-COLOR);
     font-family: var(--ACCENT-FONT);
+}
+
+.page-header {
+    font-size: 200px;
+    letter-spacing: 1px;
+}
+
+.home-button {
+    width: 25px;
+    transform: rotate(270deg);
+    position: absolute;
+    top: 55px;
+    left: 20px;
+    font-weight: 700;
+    font-family: var(--MAIN-FONT);
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
 }
 

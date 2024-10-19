@@ -38,7 +38,7 @@ function Work() {
     return (
         <div>
             <NavLink to='/'>
-                <h3 className='home-button'>HOME</h3>
+                <button className='home-button'>HOME</button>
             </NavLink>
             <div className='work-container'>
                 {workData.map((item, index) => 
