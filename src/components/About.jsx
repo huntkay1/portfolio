@@ -3,7 +3,7 @@ import { NavLink } from 'react-router-dom'
 
 function About() {
     return(
-        <div>
+        <div className='about'>
             <NavLink to='/'>
                 <button className='home-button'>HOME</button>
             </NavLink>

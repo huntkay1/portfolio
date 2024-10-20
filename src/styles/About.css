@@ -1,10 +1,10 @@
-.page-header {
+.about .page-header {
     color: var(--PURPLE-COLOR);
     margin-left: 50px;
     margin-top: 100px;
 }
 
-.home-button {
+.about .home-button {
     color: var(--PURPLE-COLOR);
 }
 
@@ -23,6 +23,7 @@
     grid-template-columns: 1fr 1fr;
     place-items: center;
     margin: 20px 15vw;
+    padding: 0 20px;
 }
 
 .about-copy {

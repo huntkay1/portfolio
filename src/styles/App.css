@@ -20,11 +20,12 @@
 }
 
 .intro p {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
 .home nav {
-  font-size: 150px;
+  font-size: 10vw;
+  transition: font-size ease-in-out 500ms;
   display: grid;
   justify-content: center;
   align-items: flex-end;
