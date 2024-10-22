@@ -1,0 +1,29 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact .page-header{
+    color: var(--PINK-COLOR);
+    margin-left: 150px;
+    margin-top: 50px;
+}
+
+.contact .home-button {
+    color: var(--PINK-COLOR);
+}
+
+.contact p {
+    color: var(--PINK-COLOR);
+    font-weight: 500;
+}
+
+label {
+    color: var(--PINK-COLOR);
+}
+
+.form-container {
+    background-color: rgba(177, 106, 117, 0.2);
+    width: 50%;
+    align-self: center;
+}
