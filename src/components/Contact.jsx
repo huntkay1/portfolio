@@ -1,9 +1,10 @@
 import '../styles/Contact.css'
 import { NavLink } from 'react-router-dom'
+import { useForm } from 'react-hook-form'
 
 function Contact() {
-
-
+   
+    const { register, handleSubmit, formState: {errors} } = useForm();
 
     return( 
         <div className='contact'>
@@ -12,22 +13,26 @@ function Contact() {
             </NavLink>
             <h2 className='page-header'>CONTACT</h2>
             <div className='form-container'>
-                <form>
+                <form onSubmit={handleSubmit((data) => {
+                    console.log(data)
+                })}>
                     <div className='input-block'>
-                        <label>Name</label>
-                        <input type='text'></input>
+                        <div className='input-header'>
+                            <label>Name</label>
+                            <p className='error'>{errors.name?.message}</p>
+                        </div>
+                        <input {...register('name', {required: 'Please provide a name'})}type='text'></input>
                     </div>
                     <div className='input-block'>
-                        <label>Number</label>
-                        <input type='tel'></input>
-                    </div>
-                    <div className='input-block'>
-                        <label>Email</label>
+                        <div className='input-header'>
+                            <label {...register('email', {required: 'Please provide an email'})}>Email</label>
+                            <p className='error'>{errors.email?.message}</p>
+                        </div>
                         <input type='email'></input>
                     </div>
                     <div className='input-block'>
                         <label>Comments</label>
-                        <textarea></textarea>
+                        <textarea {...register('comments')}></textarea>
                     </div>
                     <button type='submit'>Submit</button>
                 </form>

@@ -79,10 +79,26 @@ button[type=submit] {
     align-self: flex-end;
 }
 
+textarea {
+    padding: 20px;
+    font-family: var(--MAIN-FONT);
+}
+
 textarea:focus {
     height: 200px;
-    padding: 20px;
     outline: none;
+}
+
+.input-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.error {
+    padding-right: 20px;
+    font-style: italic;
+    color: #A20000 !important;
+    font-size: 14px !important;
 }
 
 
