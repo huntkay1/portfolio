@@ -7,23 +7,82 @@
     color: var(--PINK-COLOR);
     margin-left: 150px;
     margin-top: 50px;
+    letter-spacing: 5px;
 }
 
 .contact .home-button {
     color: var(--PINK-COLOR);
 }
 
-.contact p {
+label {
     color: var(--PINK-COLOR);
+    margin-bottom: 10px;
+    margin-left: 15px;
     font-weight: 500;
 }
 
-label {
+.form-container {
+    width: 45%;
+    align-self: center;
+    border-radius: 10px;
+}
+
+.form-container p {
+    font-size: 16px;
     color: var(--PINK-COLOR);
 }
 
-.form-container {
-    background-color: rgba(177, 106, 117, 0.2);
-    width: 50%;
+form {
     align-self: center;
+    display: flex;
+    flex-direction: column;
 }
+
+.input-block {
+    margin: 18px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    background-color: rgba(177, 106, 117, 0.1);
+    border: none;
+    border-radius: 25px;
+    height: 65px;
+    transition: background-color ease-in-out 200ms, border ease-in-out 200ms, height ease-in-out 750ms;
+    padding-left: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+    color: var(--PINK-COLOR);
+    resize: none;
+}
+
+input:hover, textarea:hover {
+    background-color: transparent;
+    border: 2.5px solid var(--PINK-COLOR)
+}
+
+input:focus, textarea:focus {
+    background-color: transparent;
+    border: 2.5px solid var(--PINK-COLOR);
+    outline: none;
+}
+
+button[type=submit] {
+    height: 50px;
+    width: 25%;
+    background-color: var(--PINK-COLOR);
+    border-radius: 25px;
+    border: none;
+    color: #FFFFF2;
+    font-size: 18px;
+    align-self: flex-end;
+}
+
+textarea:focus {
+    height: 200px;
+    padding: 20px;
+    outline: none;
+}
+
+

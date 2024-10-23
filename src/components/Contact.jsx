@@ -10,27 +10,26 @@ function Contact() {
             <NavLink to='/'>
                 <button className='home-button'>HOME</button>
             </NavLink>
-            <h2 className='page-header'>Contact</h2>
+            <h2 className='page-header'>CONTACT</h2>
             <div className='form-container'>
-                <p>I'd love to hear from ya</p>
                 <form>
                     <div className='input-block'>
-                        <label>NAME</label>
+                        <label>Name</label>
                         <input type='text'></input>
                     </div>
                     <div className='input-block'>
-                        <label>NUMBER</label>
+                        <label>Number</label>
                         <input type='tel'></input>
                     </div>
                     <div className='input-block'>
-                        <label>EMAIL</label>
+                        <label>Email</label>
                         <input type='email'></input>
                     </div>
                     <div className='input-block'>
-                        <label>COMMENTS</label>
-                        <input type='text'></input>
+                        <label>Comments</label>
+                        <textarea></textarea>
                     </div>
-                    <button type='submit'>SUBMIT</button>
+                    <button type='submit'>Submit</button>
                 </form>
             </div>
             
