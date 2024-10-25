@@ -41,7 +41,7 @@ a {
 }
 
 .page-header {
-    font-size: 200px;
+    font-size: 10vw;
     letter-spacing: 1px;
 }
 
@@ -57,5 +57,4 @@ a {
     border: none;
     font-size: 18px;
 }
-
 
