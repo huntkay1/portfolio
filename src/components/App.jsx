@@ -29,16 +29,19 @@ function App() {
 
       <h2>TECH & TOOLS</h2>
       <div className='tech-stack-items'>
-          <div>React</div>
-          <div>JavaScript</div>
-          <div>HTML5</div>
-          <div>CSS3</div>
-          <div>Git</div>
-          <div>Express.js</div>
-          <div>Node.js</div>
-          <div>Webpack</div>
-          <div>Figma</div>
+        <ul>
+          <li className='tech-item'>React</li>
+          <li className='tech-item'>JavaScript</li>
+          <li className='tech-item'>HTML5</li>
+          <li className='tech-item'>CSS3</li>
+          <li className='tech-item'>Git</li>
+          <li className='tech-item'>Express.js</li>
+          <li className='tech-item'>Node.js</li>
+          <li className='tech-item'>Webpack</li>
+          <li className='tech-item'>Figma</li>
+        </ul>
       </div>
+          
     </div>
   )
 }

@@ -15,7 +15,7 @@
 
 .intro h1 {
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 650;
   margin-bottom: 20px;
 }
 
@@ -56,12 +56,22 @@
 }
 
 .tech-stack-items {
-  display: flex;
-  justify-content: center;
-  gap: 38px;
   grid-column: 1 / -1;
   grid-row: 3 / -1;
+  display: flex;
+  justify-content: center;
 }
+
+.tech-stack-items li {
+  display: inline-block;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 10px;
+  background-color: rgba(60, 77, 127, 0.1);
+  font-family: var(--MAIN-FONT);
+  font-weight: 500;
+}
+
 
 
 
