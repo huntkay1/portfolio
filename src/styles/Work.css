@@ -133,6 +133,95 @@
 }
 
 
+@media (max-width: 430px) {
+    .work {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-headers {
+        flex-direction: column-reverse;
+    }
+
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5vh;
+    }
+
+    .card {
+        width: 90%;
+        flex-direction: column;
+        margin-bottom: 5vh;
+        padding: 0;
+    }
+
+    .hidden-content {
+        opacity: 1;
+    }
+
+    .card-info {
+        margin: 25px;
+    }
+
+    .card h3 {
+        font-size: 5vh;
+    }
+
+    .card-img {
+        opacity: 0;
+    }
+
+    .project-links {
+        margin-top: 5vh;
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 540px) {
+
+    .work {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .work-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 5vh;
+    }
+
+    .card h3 {
+        font-size: 3.5vw;
+    }
+
+    .card-info {
+        width: 30vw;
+    }
+
+    .hidden-content {
+        opacity: 1;
+    }
+
+    .project-links {
+        flex-direction: column;
+        align-self: flex-start;
+        margin-top: 3vh;
+    }
+
+    .link {
+        margin-bottom: 30px;
+    }
+
+    .card-img {
+        width: 40vw;
+    }
+}
+
 
 
 

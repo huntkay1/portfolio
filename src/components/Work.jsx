@@ -40,41 +40,43 @@ function Work() {
             <NavLink to='/'>
                 <button className='home-button'>HOME</button>
             </NavLink>
-            <div className='work-container'>
-                {workData.map((item, index) => 
-                    <div key={index} className='card'>
-                        <div className='card-info'>
-                            <h3>{item.name}</h3>
-                            <p className='hidden-content'>{item.description}</p>
-                            <ul className='tech-list hidden-content'>
-                                {item.tech.map((tech, index) => 
-                                    <li key={index}>{tech}</li>
-                                )}
-                            </ul>
-                            <div className='project-links'>
-                                <div className='hidden-content link'>
-                                    <img src={GitHub}></img>
-                                    <a href={item.github}>Repository</a>
-                                </div>
-                                <div className='hidden-content link'>
-                                    <img src={Sparkle}></img>
-                                    <a href={item.website}>Check it out</a>
+            <div className='work'>
+                <div className='work-container'>
+                    {workData.map((item, index) => 
+                        <div key={index} className='card'>
+                            <div className='card-info'>
+                                <h3>{item.name}</h3>
+                                <p className='hidden-content'>{item.description}</p>
+                                <ul className='tech-list hidden-content'>
+                                    {item.tech.map((tech, index) => 
+                                        <li key={index}>{tech}</li>
+                                    )}
+                                </ul>
+                                <div className='project-links'>
+                                    <div className='hidden-content link'>
+                                        <img src={GitHub}></img>
+                                        <a href={item.github}>Repository</a>
+                                    </div>
+                                    <div className='hidden-content link'>
+                                        <img src={Sparkle}></img>
+                                        <a href={item.website}>Check it out</a>
+                                    </div>
                                 </div>
                             </div>
+
+                            <div className='card-img hidden-content' style={{backgroundImage: `url(${item.img})` }}></div>
+
                         </div>
-
-                        <div className='card-img hidden-content' style={{backgroundImage: `url(${item.img})` }}></div>
-
-                    </div>
-                )}
-            </div>
-            
-            <div className='work-headers'>
-                <div className='work-copy'>
-                    <p>This is a collection of the projects that I'm most proud of.</p>
-                    <p>I'm consistently adding fun new projects to this list as I continue to experiment and level up my skills.</p>
+                    )}
                 </div>
-                <h2 className='page-header'>WORK</h2>
+                
+                <div className='work-headers'>
+                    <div className='work-copy'>
+                        <p>This is a collection of the projects that I'm most proud of.</p>
+                        <p>I'm consistently adding fun new projects to this list as I continue to experiment and level up my skills.</p>
+                    </div>
+                    <h2 className='page-header'>WORK</h2>
+                </div>
             </div>
         </div>
     )
