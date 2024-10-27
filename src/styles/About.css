@@ -8,10 +8,6 @@
     color: var(--PURPLE-COLOR);
 }
 
-.about-main {
-    display: flex;
-}
-
 .me {
     height: 400px;
     width: 400px;
@@ -56,5 +52,46 @@
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
+}
+
+@media (max-width: 430px) {
+
+    .about .page-header {
+        margin-left: 50px;
+        margin-top: 100px;
+    }
+    .me {
+        width: 60vw;
+        height: 60vw;
+        margin: 4vh 0;
+    }
+
+    .about-main {
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0 10vw;
+    }
+
+    .fav-header {
+        text-align: center;
+    }
+}
+
+@media (min-width: 540px) and (max-width: 1500px) {
+
+    .about .page-header {
+        margin-left: 100px;
+        margin-top: 100px;
+    }
+    
+    .me {
+        width: 30vw;
+        height: 30vw;
+        margin: 0;
+    }
+
+    .favorites {
+        padding-left: 10vw;
+    }
 }
 
