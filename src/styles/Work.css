@@ -51,11 +51,6 @@
     min-width: 0;
 }
 
-
-.card:hover {
-    width: 100%;
-}
-
 /* Card Content */
 
 .card-info {
@@ -83,11 +78,6 @@
     display: flex;
     opacity: 0;
     transition: opacity 750ms ease, max-height 750ms ease;
-}
-
-.card:hover .hidden-content {
-    opacity: 1;
-    max-height: 400px;
 }
 
 .tech-list {
@@ -176,9 +166,10 @@
         margin-top: 5vh;
         flex-direction: row;
     }
+
 }
 
-@media (min-width: 540px) {
+@media (min-width: 540px) and (max-width: 1500px) {
 
     .work {
         display: flex;
@@ -188,6 +179,7 @@
     .work-container {
         flex-direction: column;
         align-items: center;
+        margin-top: 3vh;
     }
 
     .card {
@@ -221,6 +213,21 @@
         width: 40vw;
     }
 }
+
+/* ADDS HOVER EFFECT FOR LARGER SCREENS */
+@media(min-width: 1500px) {
+    .card:hover .hidden-content {
+        opacity: 1;
+        max-height: 400px;
+    }
+
+    .card:hover {
+        width: 100%;
+    }
+}
+
+
+  
 
 
 
