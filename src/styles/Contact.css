@@ -101,4 +101,38 @@ textarea:focus {
     font-size: 14px !important;
 }
 
+@media (max-width: 540px) {
+    .contact .page-header {
+        margin: 18vh 0 10px 50px;
+        letter-spacing: normal;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+    
+    button[type=submit] {
+        width: 200px;
+    }
+
+    textarea {
+        overflow: hidden
+    }
+}
+
+@media (min-width: 540px) and (max-width: 1500px) {
+    .contact .page-header {
+        margin: 10vh 0 5vh 10vw;
+        letter-spacing: 2px;
+    }
+
+    button[type=submit] {
+        width: 200px;
+    }
+
+    textarea {
+        overflow: hidden
+    }
+}
+
 
