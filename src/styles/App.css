@@ -33,13 +33,6 @@
   padding-left: 40px;
 }
 
-.navlink a:hover {
-  color: transparent;
-  -webkit-text-stroke-width: 4px;
-  -webkit-text-stroke-color: var(--BLUE-COLOR);
-  transition: ease 0.2s;
-}
-
 .home ul {
   margin: 0;
   padding: 0;
@@ -61,8 +54,6 @@
   padding-top: 10px;
 }
 
-.tech-stack-items ul {
-}
 .tech-stack-items li {
   display: inline-block;
   padding: 10px;
@@ -144,6 +135,15 @@
   .skills {
     grid-column: 1 / -1;
     padding: 0 5vw 5vw 5vw;
+  }
+}
+
+@media (min-width: 800px) {
+  .navlink a:hover {
+    color: transparent;
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: var(--BLUE-COLOR);
+    transition: ease 0.2s;
   }
 }
 
