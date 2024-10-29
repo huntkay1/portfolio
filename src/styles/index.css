@@ -2,10 +2,10 @@
 
 @font-face {
     font-family: 'lonelyhearts';
-    src: url('src/styles/Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
-    url('src/styles/Web Fonts/lonelyhearts-regular-webfont.woff') format('woff'), /* Modern browsers */
-    url('src/styles/Web Fonts/LonelyHearts-Regular.otf') format('opentype'), /* Most modern web + mobile browsers */
-    }
+    src: url('./styles/Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
+    url('./styles/Web Fonts/lonelyhearts-regular-webfont.woff') format('woff'), /* Modern browsers */
+    url('./styles/Web Fonts/LonelyHearts-Regular.otf') format('opentype'), /* Most modern web + mobile browsers */
+}
 
 :root {
     --ACCENT-FONT: 'lonelyhearts', 'serif';
