@@ -2,9 +2,9 @@
 
 @font-face {
     font-family: 'lonelyhearts';
-    src: url('./styles/Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
-    url('./styles/Web Fonts/lonelyhearts-regular-webfont.woff') format('woff'), /* Modern browsers */
-    url('./styles/Web Fonts/LonelyHearts-Regular.otf') format('opentype'), /* Most modern web + mobile browsers */
+    src: url('./Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
+    url('./Web Fonts/lonelyhearts-regular-webfont.woff') format('woff'), /* Modern browsers */
+    url('./Web Fonts/LonelyHearts-Regular.otf') format('opentype'), /* Most modern web + mobile browsers */
 }
 
 :root {
