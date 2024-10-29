@@ -1,5 +1,5 @@
 .home-button {
-    color: var(--GREEN-COLOR);
+    color: var(--BLUE-COLOR);
 }
 
 /* Headers */
@@ -7,21 +7,12 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    gap: 50px;
-    margin: 150px 10vw 0;
-    color: var(--GREEN-COLOR);
-}
-
-.work-headers h2 {
-    color: var(--GREEN-COLOR);
-}
-
-.work-headers p {
-    color: var(--GREEN-COLOR);
+    margin: 100px 10vw 0;
+    color: var(--BLUE-COLOR);
 }
 
 .work-copy {
-    width: 250px;
+    width: 300px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -37,7 +28,7 @@
 
 /* Card Styles */
 .card {
-    background-color: rgba(4, 89, 77, 0.1);
+    background-color: rgba(48, 69, 181, 0.1);
     width: 28vw;
     height: 350px;
     margin: 0 20px;
@@ -60,17 +51,18 @@
 }
 
 .card h3 {
-    font-size: 2.5vw;
+    font-size: 5vw;
     letter-spacing: 1px;
     margin: 10px 0;
     font-family: var(--ACCENT-FONT);
     width: 100px;
+    font-weight: 400;
 }
 
 .card h3, 
 .card p, 
 .card li {
-    color: var(--GREEN-COLOR);
+    color: var(--BLUE-COLOR);
 }
 
 /* Hidden Content */
@@ -103,17 +95,17 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 20px;
 }
 
 .project-links a {
     font-weight: 500;
     font-family: var(--MAIN-FONT);
-    color: var(--GREEN-COLOR);
+    color: var(--BLUE-COLOR);
 }
 
 .project-links a:hover {
-    border-bottom: 2px solid var(--GREEN-COLOR);
+    border-bottom: 2px solid var(--BLUE-COLOR);
 }
 
 .link {
@@ -188,7 +180,7 @@
     }
 
     .card h3 {
-        font-size: 3.5vw;
+        font-size: 5vw;
     }
 
     .card-info {

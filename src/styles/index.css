@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ultra&display=swap');
+
+
+@font-face {
+    font-family: 'lonelyhearts';
+    src: url('src/styles/Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
+}
+
 :root {
-    --ACCENT-FONT: 'Ultra', serif;
+    --ACCENT-FONT: 'lonelyhearts', 'serif';
     --MAIN-FONT: 'IBM Plex Sans', serif;
-    --BLUE-COLOR: #3C4D7F;
-    --GREEN-COLOR: rgba(4, 89, 77);
-    --PURPLE-COLOR: #796D93;
-    --PINK-COLOR: rgba(177, 106, 117);
+    --BLUE-COLOR: #3045B5;
+    --GREEN-COLOR: #4B7F52;
+    --PURPLE-COLOR: #BC2C1B;
+    --PINK-COLOR: #DF3C4B;
 }
 
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: #FFFFF2;
+    background-color: #FDF0E0;
 }
 
 h1, p, div {
     font-family: var(--MAIN-FONT);
     margin: 0;
     padding: 0;
-    color: var(--BLUE-COLOR);
+}
+
+p {
+    font-weight: 400;
 }
 
 h2, li {
     font-family: var(--ACCENT-FONT);
     margin: 0;
     padding: 0;
-    color: var(--BLUE-COLOR);
+}
+
+h1, h2, h3 {
+    font-weight: 300;
 }
 
 li {
@@ -40,8 +53,8 @@ a {
 }
 
 .page-header {
-    font-size: 10vw;
-    letter-spacing: 1px;
+    font-size: 18vw;
+    font-weight: 400;
 }
 
 .home-button {

@@ -1,7 +1,8 @@
 .home {
   display: grid;
-  grid-template-rows: 80vh 20vh;
-  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 70vh 30vh;
+  grid-template-columns: 1fr 1fr;
+  color: var(--BLUE-COLOR);
 }
 
 .intro {
@@ -9,13 +10,14 @@
   flex-direction: column;
   justify-content: flex-end;
   justify-self: end;
+  padding-right: 5vw;
   width: 300px;
   grid-row: 1 / 2 ;
 }
 
 .intro h1 {
-  font-size: 16px;
-  font-weight: 650;
+  font-family: var(--ACCENT-FONT);
+  font-size: 50px;
   margin-bottom: 20px;
 }
 
@@ -24,10 +26,10 @@
 }
 
 .home nav {
-  font-size: 10vw;
+  font-size:calc(20px + 13vw);
   transition: font-size ease-in-out 500ms;
   display: grid;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: flex-end;
   grid-row: 1 / 2 ;
   padding-left: 40px;
@@ -39,8 +41,9 @@
 }
 
 .home h2 {
-  font-size: 16px;
+  font-size: 50px;
   padding-top: 30px;
+  padding-bottom: 20px;
   align-self: flex-start;
   margin-left: 17vw;
 }
@@ -51,7 +54,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 10px;
+  padding-top: 80px;
 }
 
 .tech-stack-items li {
@@ -59,7 +62,7 @@
   padding: 10px;
   margin: 8px 15px;
   border-radius: 10px;
-  background-color: rgba(60, 77, 127, 0.1);
+  background-color: rgba(48, 69, 181, 0.1);
   font-family: var(--MAIN-FONT);
   font-weight: 500;
 }
@@ -87,11 +90,12 @@
     padding: 0 !important;
     margin-bottom: 2vh;
     align-items: center;
+    justify-content: center;
   }
 
   .navlink {
     margin: 3vh 0;
-    font-size: 6vh !important;
+    font-size: 12vh !important;
   }
 
   .skills {
@@ -124,12 +128,13 @@
   }
 
   .navlink {
-    font-size: 8vw;
+    font-size: 15vw;
   }
 
   .home h2 {
     justify-content: flex-start;
     padding: 0;
+    margin: 0;
   }
 
   .skills {

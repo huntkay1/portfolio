@@ -4,18 +4,18 @@
 }
 
 .contact .page-header{
-    color: var(--PINK-COLOR);
+    color: var(--BLUE-COLOR);
     margin-left: 150px;
     margin-top: 50px;
     letter-spacing: 5px;
 }
 
 .contact .home-button {
-    color: var(--PINK-COLOR);
+    color: var(--BLUE-COLOR);
 }
 
 label {
-    color: var(--PINK-COLOR);
+    color: var(--BLUE-COLOR);
     margin-bottom: 10px;
     margin-left: 15px;
     font-weight: 500;
@@ -29,7 +29,7 @@ label {
 
 .form-container p {
     font-size: 16px;
-    color: var(--PINK-COLOR);
+    color: var(--BLUE-COLOR);
 }
 
 form {
@@ -45,7 +45,7 @@ form {
 }
 
 input, textarea {
-    background-color: rgba(177, 106, 117, 0.1);
+    background-color: rgba(48, 69, 181, 0.1);
     border: none;
     border-radius: 25px;
     height: 65px;
@@ -53,25 +53,25 @@ input, textarea {
     padding-left: 20px;
     font-size: 20px;
     box-sizing: border-box;
-    color: var(--PINK-COLOR);
+    color: var(--BLUE-COLOR);
     resize: none;
 }
 
 input:hover, textarea:hover {
     background-color: transparent;
-    border: 2.5px solid var(--PINK-COLOR)
+    border: 2.5px solid var(--BLUE-COLOR)
 }
 
 input:focus, textarea:focus {
     background-color: transparent;
-    border: 2.5px solid var(--PINK-COLOR);
+    border: 2.5px solid var(--BLUE-COLOR);
     outline: none;
 }
 
 button[type=submit] {
     height: 50px;
     width: 25%;
-    background-color: var(--PINK-COLOR);
+    background-color: var(--BLUE-COLOR);
     border-radius: 25px;
     border: none;
     color: #FFFFF2;

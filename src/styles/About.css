@@ -1,11 +1,10 @@
 .about .page-header {
-    color: var(--PURPLE-COLOR);
+    color: var(--BLUE-COLOR);
     margin-left: 150px;
-    margin-top: 80px;
 }
 
 .about .home-button {
-    color: var(--PURPLE-COLOR);
+    color: var(--BLUE-COLOR);
 }
 
 .me {
@@ -24,7 +23,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
-    margin: 40px 15vw;
+    margin: 20px 15vw;
+    color: var(--BLUE-COLOR);
 }
 
 .about-copy {
@@ -39,16 +39,16 @@
 }
 
 .fav-header {
-    color: var(--PURPLE-COLOR);
+    color: var(--BLUE-COLOR);
     letter-spacing: 1px;
-    margin-top: 20px;
-    font-size: 18px;
+    font-size: 50px;
 }
 
 .about li {
+    color: var(--BLUE-COLOR);
     font-family: var(--MAIN-FONT);
     display: inline-block;
-    background-color: #F2EFF2;
+    background-color: rgba(48, 69, 181, 0.1);
     padding: 10px;
     margin: 10px;
     border-radius: 10px;
