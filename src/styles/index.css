@@ -9,12 +9,9 @@
 
 @font-face {
     font-family: 'capriccioplain';
-    src: url('capriccio-plain-webfont.eot'); /* IE9+ */ 
-    src: url('capriccio-plain-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-    url('src/styles/Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
+    src: url('src/styles/Web Fonts/lonelyhearts-regular-webfont.woff2') format('woff2'), /* Modern browsers */
     url('src/styles/Web Fonts/lonelyhearts-regular-webfont.woff') format('woff'), /* Modern browsers */
-    url('capriccio-plain-webfont.ttf') format('truetype'), /* Most modern web + mobile browsers */
-    url('capriccio-plain-webfont.svg#capriccioplain') format('svg'); /* iOS Safari 4.1 and below */
+    url('src/styles/Web Fonts/LonelyHearts-Regular.otf') format('opentype'), /* Most modern web + mobile browsers */
     }
 
 :root {
