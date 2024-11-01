@@ -31,7 +31,7 @@ function Contact() {
       <NavLink to="/">
         <button className="home-button">HOME</button>
       </NavLink>
-      <h2 className="page-header">CONTACT</h2>
+      <h2 className="page-header">Contact</h2>
       <div className="form-container">
         <form ref={form} onSubmit={handleSubmit(sendEmail)}>
           <div className="input-block">

@@ -7,8 +7,9 @@ function About() {
             <NavLink to='/'>
                 <button className='home-button'>HOME</button>
             </NavLink>
-            <h2 className='page-header'>ABOUT</h2>
+            <h2 className='page-header'>About</h2>
             <div className='about-main'>
+                <div className='me'></div>
                 <div className='about-copy'>
                     <p>
                     Howdy. My name is Kayla and I'm a front-end developer (who dabbles in back-end) based in Michigan. 
@@ -25,20 +26,23 @@ function About() {
                     </p>
                 </div>  
 
-                    <div className='me'></div>
             </div>
 
             <div>
-                <div className='favorites'>
-                    <h2 className='fav-header'>
-                        MORE SIMPLE PLEASURES
+                <div className='tech'>
+                    <h2 className='tech-header'>
+                        Tech & Tools
                     </h2>
                     <ul>
-                        <li>A darn good book</li>
-                        <li>Baking</li>
-                        <li>Discovering my new favorite movie</li>
-                        <li>Watching my favorite band in concert</li>
-                        <li>Lake Michigan sunsets</li>
+                    <li className='tech-item'>React</li>
+                    <li className='tech-item'>JavaScript</li>
+                    <li className='tech-item'>HTML5</li>
+                    <li className='tech-item'>CSS3</li>
+                    <li className='tech-item'>Git</li>
+                    <li className='tech-item'>Express.js</li>
+                    <li className='tech-item'>Node.js</li>
+                    <li className='tech-item'>Webpack</li>
+                    <li className='tech-item'>Figma</li>
                     </ul>
                 </div>
             

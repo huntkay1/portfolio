@@ -10,7 +10,7 @@ function Work() {
 
     const workData = [
         {
-            name: 'LEAFY GREENS',
+            name: 'Leafy Greens',
             description: 'Ecommerce site for a fictional plant shop',
             tech: ['React', 'CSS', 'Bootstrap', 'Express.js'],
             website: 'https://poetic-starlight-e42a0f.netlify.app/',
@@ -18,7 +18,7 @@ function Work() {
             img: Leafy
         },
         {
-            name: 'MEMORY GAME',
+            name: 'Memory Game',
             description: 'Memory card game powered by PokeAPI',
             tech: ['React', 'CSS'],
             website: 'https://rad-bienenstitch-6bdaa4.netlify.app/',
@@ -26,7 +26,7 @@ function Work() {
             img: Pokemon
         }, 
         {
-            name: 'RESUME BUILDER',
+            name: 'Resume Builder',
             description: 'Download a custom resume with the given template',
             tech: ['React', 'CSS'],
             website: ' https://exquisite-kitsune-0ba888.netlify.app/',
@@ -75,7 +75,7 @@ function Work() {
                         <p>This is a collection of the projects that I'm most proud of.</p>
                         <p>I'm consistently adding fun new projects to this list as I continue to experiment and level up my skills.</p>
                     </div>
-                    <h2 className='page-header'>WORK</h2>
+                    <h2 className='page-header'>Work</h2>
                 </div>
             </div>
         </div>

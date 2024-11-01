@@ -1,6 +1,7 @@
 .about .page-header {
     color: var(--BLUE-COLOR);
     margin-left: 150px;
+    margin-top: 50px;
 }
 
 .about .home-button {
@@ -15,15 +16,15 @@
     background-repeat: no-repeat;
     border-radius: 200px 200px 5px 5px;
     background-position: 100% 50%;
-    margin-top: -50px;
-    margin-left: 80px;
+
 }
 
 .about-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    place-items: center;
-    margin: 20px 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    margin: 10px 15vw;
     color: var(--BLUE-COLOR);
 }
 
@@ -31,26 +32,32 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 30vw;
 }
 
-.favorites {
+.tech {
     display: grid;
     place-content: center;
+    margin-top: 3vh;
 }
 
-.fav-header {
+.tech-header {
     color: var(--BLUE-COLOR);
-    letter-spacing: 1px;
-    font-size: 50px;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.about ul {
+    margin-top: 0;
 }
 
 .about li {
     color: var(--BLUE-COLOR);
     font-family: var(--MAIN-FONT);
     display: inline-block;
-    background-color: rgba(48, 69, 181, 0.1);
     padding: 10px;
     margin: 10px;
+    border: 2.5px solid var(--BLUE-COLOR);
     border-radius: 10px;
 }
 
