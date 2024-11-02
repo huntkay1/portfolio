@@ -1,15 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ultra&display=swap');
 
 @font-face {
-    font-family: 'Vinery';
-    src: url('Web Fonts/belgin-webfont.woff2');
-    src: url('Web Fonts/belgin-webfont.woff');
-    src: url('Fonts/Belgin.ttf');
-    src: url('Fonts/Belgin.otf');
+    font-family: 'Belgin';
+    src: url('/Web Fonts/belgin-webfont.woff2');
+    src: url('/Web Fonts/belgin-webfont.woff');
+    src: url('/Fonts/Belgin.ttf');
+    src: url('/Fonts/Belgin.otf');
+    font-family: 'lonelyhearts';
+    src: url('/Web Fonts/belgin-webfont.woff2') format('woff2'),
+    url('/Web Fonts/belgin-webfont.woff') format('woff') /* Modern browsers */
+    url('/Fonts/Belgin.ttf') format('texttype'), /* Modern browsers */
+    url('/Fonts/Belgin.otf') format('opentype'), /* Most modern web + mobile browsers */
+
 }
 
 :root {
-    --ACCENT-FONT: 'Vinery', 'serif';
+    --ACCENT-FONT: 'Belgin', 'serif';
     --MAIN-FONT: 'IBM Plex Sans', serif;
     --BLUE-COLOR: #04594D;
     --GREEN-COLOR: #4B7F52;
