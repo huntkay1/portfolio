@@ -1,6 +1,4 @@
 .home {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,17 +41,16 @@
 
 @media (max-width: 430px) {
   .home {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10vw;
   }
 
   .intro {
-    grid-column: 1 / -1;
-    justify-self: start;
-    margin-top: 5vh;
-    margin-left: 8vw;
     justify-content: center;
     padding: 0 !important;
-    
+    width: 80vw;
   }
 
   .home nav {
@@ -72,18 +69,15 @@
 }
 
 @media (max-width: 1024px) {
-
   .home {
-    grid-template-rows: 60vh 20vh 20vh;
+    margin: 0 5vw;
   }
 
   .intro {
-    padding-left: 5vw;
     padding-bottom: 10vh;
   }
 
   .home nav {
-    padding: 0;
     padding-bottom: 10vh;
   }
 

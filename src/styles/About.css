@@ -66,20 +66,27 @@
     .about .page-header {
         margin-left: 50px;
         margin-top: 100px;
+        margin-bottom: 5vh;
     }
+
     .me {
         width: 60vw;
         height: 60vw;
-        margin: 4vh 0;
     }
 
     .about-main {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 0 10vw;
+        gap: 30px;
     }
 
-    .fav-header {
+    .about-copy {
+        width: 80vw;
+        margin-bottom: 2vh;
+    }
+
+    .tech-header {
         text-align: center;
     }
 }
@@ -90,6 +97,15 @@
         margin-left: 100px;
         margin-top: 100px;
     }
+
+    .about-main {
+        margin: 5vh 8vw;
+        justify-content: space-between;
+    }
+
+    .about-copy {
+        width: 50vw;
+    }
     
     .me {
         width: 30vw;
@@ -97,8 +113,10 @@
         margin: 0;
     }
 
-    .favorites {
-        padding-left: 10vw;
+    .tech-header {
+        padding-left: 5vw;
     }
+
+
 }
 
