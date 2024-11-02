@@ -2,7 +2,10 @@
 
 @font-face {
     font-family: 'Vinery';
-    src: url('public/Web Fonts/fearlessly-authentic.otf');
+    src: url('public/Web Fonts/belgin-webfont.woff2');
+    src: url('public/Web Fonts/belgin-webfont.woff');
+    src: url('public/Fonts/Belgin.ttf');
+    src: url('public/Fonts/Belgin.otf')
 
 }
 
