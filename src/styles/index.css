@@ -8,10 +8,9 @@
     src: url('/Fonts/Belgin.otf');
     font-family: 'lonelyhearts';
     src: url('/Web Fonts/belgin-webfont.woff2') format('woff2'),
-    url('/Web Fonts/belgin-webfont.woff') format('woff') /* Modern browsers */
-    url('/Fonts/Belgin.ttf') format('texttype'), /* Modern browsers */
-    url('/Fonts/Belgin.otf') format('opentype'), /* Most modern web + mobile browsers */
-
+    url('/Web Fonts/belgin-webfont.woff') format('woff') 
+    url('/Fonts/Belgin.ttf') format('texttype'), 
+    url('/Fonts/Belgin.otf') format('opentype'), 
 }
 
 :root {

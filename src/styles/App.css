@@ -95,7 +95,7 @@
 @media (min-width: 800px) {
   .navlink a:hover {
     font-style: normal;
-    transition: font-style ease 1s;
+    transition: font-style ease 150ms;
   }
 }
 
