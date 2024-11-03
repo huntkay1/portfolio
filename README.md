@@ -10,3 +10,4 @@ Tech used:
 - EmailJS to power the contact form
 - React-hook-form to handle form validation
 - React-router-dom for routing pages
+- Framer Motion for page transition animation
