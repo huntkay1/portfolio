@@ -48,6 +48,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 80%;
 }
 
 .card h3 {
@@ -93,6 +94,8 @@
 .project-links {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    column-gap: 20px;
     margin-top: 60px;
 }
 
@@ -159,7 +162,7 @@
 
 }
 
-@media (min-width: 540px) and (max-width: 1500px) {
+@media (min-width: 540px) and (max-width: 1400px) {
 
     .work {
         display: flex;
@@ -190,11 +193,11 @@
     }
 
     .project-links {
-        margin-top: 3vh;
+        margin-top: 2vh;
     }
 
     .link {
-        margin-bottom: 30px;
+        margin-bottom: 20px;
     }
 
     .card-img {
@@ -203,7 +206,7 @@
 }
 
 /* ADDS HOVER EFFECT FOR LARGER SCREENS */
-@media(min-width: 1500px) {
+@media(min-width: 1400px) {
     .card:hover .hidden-content {
         opacity: 1;
         max-height: 400px;
@@ -214,11 +217,6 @@
     }
 }
 
-@media(max-width: 850px) {
-    .project-links {
-        flex-direction: column;
-    }
-}
 
 
   
