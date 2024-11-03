@@ -27,7 +27,7 @@
 }
 
 .home nav {
-  font-size:calc(20px + 14vw);
+  font-size:calc(20px + 12vw);
   transition: font-size ease-in-out 500ms;
   padding-left: 40px;
   font-style: italic;
