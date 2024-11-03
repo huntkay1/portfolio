@@ -1,13 +1,12 @@
-import '../styles/Contact.css';
-import transition from './transition.jsx';
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import '../styles/Contact.css';
 
 function Contact() {
   const form = useRef();
-  
   const { register, handleSubmit, formState: { errors } } = useForm();
 
   const sendEmail = (data, e) => {
@@ -28,48 +27,90 @@ function Contact() {
   };
 
   return (
-    <div className="contact">
-      <NavLink to="/">
-        <button className="home-button">HOME</button>
+    <motion.div
+      className="contact"
+      initial={{ opacity: 0, y: -20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -20 }}
+      transition={{ duration: 0.5 }}
+    >
+      <NavLink to='/'>
+        <button className='home-button'>HOME</button>
       </NavLink>
-      <h2 className="page-header">Contact</h2>
-      <div className="form-container">
+
+      <motion.h2
+        className="page-header"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.1, duration: 0.4 }}
+      >
+        Contact
+      </motion.h2>
+
+      <motion.div
+        className="form-container"
+        initial={{ opacity: 0, y: -10 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.4 }}
+      >
         <form ref={form} onSubmit={handleSubmit(sendEmail)}>
-          <div className="input-block">
+          <motion.div
+            className="input-block"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.3 }}
+          >
             <div className="input-header">
               <label>Name</label>
-              <p className="error">{errors.name?.message}</p>
+              <p className="error">{errors.user_name?.message}</p>
             </div>
-            <input 
-              {...register('user_name', { required: 'Please provide a name' })} 
-              type="text" 
+            <input
+              {...register('user_name', { required: 'Please provide a name' })}
+              type="text"
               name="user_name"
             />
-          </div>
-          <div className="input-block">
+          </motion.div>
+
+          <motion.div
+            className="input-block"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.3 }}
+          >
             <div className="input-header">
               <label>Email</label>
-              <p className="error">{errors.email?.message}</p>
+              <p className="error">{errors.user_email?.message}</p>
             </div>
-            <input 
-              {...register('user_email', { required: 'Please provide an email' })} 
-              type="email" 
+            <input
+              {...register('user_email', { required: 'Please provide an email' })}
+              type="email"
               name="from_email"
             />
-          </div>
-          <div className="input-block">
+          </motion.div>
+
+          <motion.div
+            className="input-block"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6, duration: 0.3 }}
+          >
             <label>Comments</label>
-            <textarea 
-              {...register('comments')} 
-              name="message"
-            />
-          </div>
-          <button type="submit">Submit</button>
+            <textarea {...register('comments')} name="message" />
+          </motion.div>
+
+          <motion.button
+            type="submit"
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.7, duration: 0.4 }}
+          >
+            Submit
+          </motion.button>
         </form>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
+export default Contact;
 
-export default transition(Contact);

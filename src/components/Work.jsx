@@ -1,14 +1,13 @@
-import '../styles/Work.css'
-import transition from './transition.jsx'
-import Leafy from '../assets/leafy.png'
-import Pokemon from '../assets/pokemon.png'
-import Resume from '../assets/resume.png'
-import Sparkle from '../assets/sparkle.svg'
-import GitHub from '../assets/github.svg'
+import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
+import '../styles/Work.css';
+import Leafy from '../assets/leafy.png';
+import Pokemon from '../assets/pokemon.png';
+import Resume from '../assets/resume.png';
+import Sparkle from '../assets/sparkle.svg';
+import GitHub from '../assets/github.svg';
 
 function Work() {
-
     const workData = [
         {
             name: 'Leafy Greens',
@@ -34,17 +33,29 @@ function Work() {
             github: 'https://github.com/huntkay1/cv-builder-app',
             img: Resume
         }, 
-    ]
+    ];
 
     return (
-        <div>
+        <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: -20 }}
+            transition={{ duration: 0.5 }}
+        >
             <NavLink to='/'>
                 <button className='home-button'>HOME</button>
             </NavLink>
+            
             <div className='work'>
                 <div className='work-container'>
                     {workData.map((item, index) => 
-                        <div key={index} className='card'>
+                        <motion.div
+                            key={index}
+                            className='card'
+                            initial={{ opacity: 0, y: -10 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: index * 0.3, duration: 0.4 }}
+                        >
                             <div className='card-info'>
                                 <h3>{item.name}</h3>
                                 <p className='hidden-content'>{item.description}</p>
@@ -55,19 +66,17 @@ function Work() {
                                 </ul>
                                 <div className='project-links'>
                                     <div className='hidden-content link'>
-                                        <img src={GitHub}></img>
+                                        <img src={GitHub} alt="GitHub" />
                                         <a href={item.github}>Repository</a>
                                     </div>
                                     <div className='hidden-content link'>
-                                        <img src={Sparkle}></img>
+                                        <img src={Sparkle} alt="Live Site" />
                                         <a href={item.website}>Check it out</a>
                                     </div>
                                 </div>
                             </div>
-
-                            <div className='card-img hidden-content' style={{backgroundImage: `url(${item.img})` }}></div>
-
-                        </div>
+                            <div className='card-img hidden-content' style={{ backgroundImage: `url(${item.img})` }}></div>
+                        </motion.div>
                     )}
                 </div>
                 
@@ -79,9 +88,8 @@ function Work() {
                     <h2 className='page-header'>Work</h2>
                 </div>
             </div>
-        </div>
-    )
+        </motion.div>
+    );
 }
 
-
-export default transition(Work)
+export default Work;
