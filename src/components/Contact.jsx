@@ -1,4 +1,5 @@
 import '../styles/Contact.css';
+import transition from './transition.jsx';
 import { NavLink } from 'react-router-dom';
 import { useForm } from 'react-hook-form';
 import { useRef } from 'react';
@@ -70,4 +71,5 @@ function Contact() {
   );
 }
 
-export default Contact;
+
+export default transition(Contact);

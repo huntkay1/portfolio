@@ -1,4 +1,5 @@
 import '../styles/Work.css'
+import transition from './transition.jsx'
 import Leafy from '../assets/leafy.png'
 import Pokemon from '../assets/pokemon.png'
 import Resume from '../assets/resume.png'
@@ -82,4 +83,5 @@ function Work() {
     )
 }
 
-export default Work
+
+export default transition(Work)

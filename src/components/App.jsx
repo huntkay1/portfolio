@@ -1,5 +1,6 @@
 import '../styles/App.css'
 import { NavLink } from 'react-router-dom';
+import transition from './transition.jsx';
 
 function App() {
   return (
@@ -31,4 +32,5 @@ function App() {
   )
 }
 
-export default App
+
+export default transition(App);

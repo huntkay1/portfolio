@@ -6,6 +6,7 @@ import About from './About.jsx'
 import Contact from './Contact.jsx'
 import '../styles/index.css'
 import { createBrowserRouter, RouterProvider } from "react-router-dom"
+import { AnimatePresence } from 'framer-motion'
 
 const routes = [
   {
@@ -29,7 +30,9 @@ const routes = [
 const router = createBrowserRouter(routes);
 
 createRoot(document.getElementById('root')).render(
+  <AnimatePresence mode='wait'>
   <StrictMode>
-    <RouterProvider router={router} />
-  </StrictMode>,
+      <RouterProvider router={router} />
+  </StrictMode>
+  </AnimatePresence>
 )

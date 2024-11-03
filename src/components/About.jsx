@@ -1,4 +1,5 @@
 import '../styles/About.css'
+import transition from './transition.jsx'
 import { NavLink } from 'react-router-dom'
 
 function About() {
@@ -51,4 +52,4 @@ function About() {
     )
 }
 
-export default About
+export default transition(About)
