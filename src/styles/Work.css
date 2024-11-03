@@ -153,8 +153,8 @@
     }
 
     .project-links {
-        margin-top: 5vh;
-        flex-direction: row;
+        margin-top: 3.5vh;
+        flex-direction: row !important;
     }
 
 }
