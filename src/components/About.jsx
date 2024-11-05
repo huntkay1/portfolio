@@ -47,7 +47,7 @@ function About() {
                             Howdy. My name is Kayla, and I'm a front-end developer (who dabbles in back-end) based in Michigan.
                         </p>
                         <p>
-                            I have completed a bachelor's degree in Information Science, where I learned about UX design & research, programming, and web design. This experience inspired me to pursue web development, and I've since continued to teach myself new skills like React & Node.js.
+                            I have completed a bachelor's degree in Information Science, where I learned about UX design & research, programming, and web design. This experience inspired me to pursue web development, and I've since continued to teach myself new skills like React & Framer Motion.
                         </p>
                         <p>
                             One of the simple pleasures in life is coming across beautiful and easy-to-use websites. My goal is to craft enjoyable experiences for users while helping you reach your goals &#10023;
