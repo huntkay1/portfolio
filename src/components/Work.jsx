@@ -6,6 +6,9 @@ import Pokemon from '../assets/pokemon.png';
 import Resume from '../assets/resume.png';
 import Sparkle from '../assets/sparkle.svg';
 import GitHub from '../assets/github.svg';
+import GitHub2 from '../assets/github-2.svg'
+import Email from '../assets/email.svg'
+import LinkedIn from '../assets/linkedin.svg'
 
 function Work() {
     const workData = [
@@ -41,11 +44,21 @@ function Work() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ duration: 0.5 }}
-        >
-            <NavLink to='/'>
-                <button className='home-button'>HOME</button>
-            </NavLink>
-            
+            className='page-container'
+        >   
+        
+            <div className='sidebar'>
+                <NavLink to='/'>
+                    <button className='home-button'>HOME</button>
+                </NavLink>
+                <div className='sidebar-icons'>
+                    <img src={GitHub2}></img>
+                    <img src={LinkedIn}></img>
+                    <img src={Email}></img>
+                </div>
+            </div>
+
+
             <div className='work'>
                 <div className='work-container'>
                     {workData.map((item, index) => 

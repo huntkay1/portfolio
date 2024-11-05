@@ -2,6 +2,33 @@
     color: var(--BLUE-COLOR);
 }
 
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.sidebar {
+    display: grid;
+    position: fixed;
+    justify-content: center;
+    left: 0;
+    width: 5vw;
+    height: 100vh;
+    z-index: 1;
+}
+
+.sidebar-icons {
+    place-content: end;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.sidebar-icons img{
+    height: 20px;
+}
+
 /* Headers */
 .work-headers {
     display: flex;

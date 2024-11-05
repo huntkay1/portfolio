@@ -12,9 +12,6 @@
     --ACCENT-FONT: 'Belgin', 'serif';
     --MAIN-FONT: 'IBM Plex Sans', serif;
     --BLUE-COLOR: #04594D;
-    --GREEN-COLOR: #4B7F52;
-    --PURPLE-COLOR: #BC2C1B;
-    --PINK-COLOR: #DF3C4B;
 }
 
 body {
@@ -64,14 +61,13 @@ a {
 .home-button {
     width: 25px;
     transform: rotate(270deg);
-    position: absolute;
-    top: 60px;
-    left: 20px;
     font-weight: 700;
     font-family: var(--MAIN-FONT);
     background-color: transparent;
     border: none;
     font-size: 18px;
+    margin-top: 80px;
+    /* margin-left: 10px; */
 }
 
 .home-button:hover {
