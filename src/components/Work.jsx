@@ -1,14 +1,12 @@
 import { motion } from 'framer-motion';
-import { NavLink } from 'react-router-dom';
 import '../styles/Work.css';
 import Leafy from '../assets/leafy.png';
 import Pokemon from '../assets/pokemon.png';
 import Resume from '../assets/resume.png';
 import Sparkle from '../assets/sparkle.svg';
 import GitHub from '../assets/github.svg';
-import GitHub2 from '../assets/github-2.svg'
-import Email from '../assets/email.svg'
-import LinkedIn from '../assets/linkedin.svg'
+import Sidebar from './Sidebar';
+
 
 function Work() {
     const workData = [
@@ -46,18 +44,8 @@ function Work() {
             transition={{ duration: 0.5 }}
             className='page-container'
         >   
-        
-            <div className='sidebar'>
-                <NavLink to='/'>
-                    <button className='home-button'>HOME</button>
-                </NavLink>
-                <div className='sidebar-icons'>
-                    <img src={GitHub2}></img>
-                    <img src={LinkedIn}></img>
-                    <img src={Email}></img>
-                </div>
-            </div>
 
+            <Sidebar />
 
             <div className='work'>
                 <div className='work-container'>

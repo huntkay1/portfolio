@@ -1,32 +1,8 @@
-.home-button {
-    color: var(--BLUE-COLOR);
-}
+
 
 .page-container {
     display: grid;
     grid-template-columns: 1fr;
-}
-
-.sidebar {
-    display: grid;
-    position: fixed;
-    justify-content: center;
-    left: 0;
-    width: 5vw;
-    height: 100vh;
-    z-index: 1;
-}
-
-.sidebar-icons {
-    place-content: end;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    margin-bottom: 20px;
-}
-
-.sidebar-icons img{
-    height: 20px;
 }
 
 /* Headers */
@@ -50,13 +26,14 @@
 .work-container {
     display: flex;
     justify-content: center;
-    margin-top: 120px;
+    margin-top: 130px;
 }
+
 
 /* Card Styles */
 .card {
     background-color: #f9f9f9;
-    width: 25vw;
+    width: 20vw;
     height: 350px;
     margin: 0 20px;
     padding: 15px 50px;
@@ -101,7 +78,9 @@
 
 .tech-list {
     padding: 0;
-    justify-self: left;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .tech-list li {
@@ -144,6 +123,7 @@
 
 
 @media (max-width: 430px) {
+
     .work {
         display: flex;
         flex-direction: column-reverse;
@@ -151,6 +131,8 @@
 
     .work-headers {
         flex-direction: column-reverse;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .work-container {
@@ -162,8 +144,8 @@
     .card {
         width: 90%;
         flex-direction: column;
-        margin-bottom: 5vh;
         padding: 0;
+        margin: 0 0 5vh 0;
     }
 
     .hidden-content {
@@ -183,7 +165,7 @@
     }
 
     .project-links {
-        margin-top: 3.5vh;
+        margin-top: 2.5vh;
         flex-direction: row !important;
     }
 
@@ -203,7 +185,7 @@
     }
 
     .card {
-        width: 80%;
+        width: 70%;
         margin-bottom: 5vh;
     }
 
