@@ -1,7 +1,7 @@
 import GitHub2 from '../assets/github-2.svg'
 import Email from '../assets/email.svg'
 import LinkedIn from '../assets/linkedin.svg'
-import { NavLink } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 function Sidebar() {
     return(
@@ -10,9 +10,9 @@ function Sidebar() {
             <button className='home-button'>HOME</button>
         </NavLink>
         <div className='sidebar-icons'>
-            <img src={GitHub2}></img>
-            <img src={LinkedIn}></img>
-            <img src={Email}></img>
+            <Link to='https://github.com/huntkay1'><img src={GitHub2}></img></Link>
+            <Link to='https://www.linkedin.com/in/kaylahunt7/'><img src={LinkedIn}></img></Link>
+            <Link to=''><img src={Email}></img></Link>
         </div>
     </div>
     )
