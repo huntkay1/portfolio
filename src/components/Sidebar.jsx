@@ -12,7 +12,7 @@ function Sidebar() {
         <div className='sidebar-icons'>
             <Link to='https://github.com/huntkay1'><img src={GitHub2}></img></Link>
             <Link to='https://www.linkedin.com/in/kaylahunt7/'><img src={LinkedIn}></img></Link>
-            <Link to=''><img src={Email}></img></Link>
+            <Link to='mailto:kayla.hunt798@gmail.com'><img src={Email}></img></Link>
         </div>
     </div>
     )
