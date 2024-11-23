@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { NavLink } from 'react-router-dom';
 import '../styles/App.css';
+import Sidebar from './Sidebar'
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.2 }}
     >
+      <Sidebar />
+
       <motion.section
         className="intro"
         initial={{ opacity: 0, y: -10 }}
