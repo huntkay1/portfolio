@@ -4,6 +4,8 @@ import '../styles/App.css';
 import Sidebar from './Sidebar'
 
 function App() {
+
+
   return (
     <motion.div
       className="home"

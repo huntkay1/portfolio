@@ -1,24 +1,21 @@
 import GitHub2 from '../assets/github-2.svg'
 import Email from '../assets/email.svg'
 import LinkedIn from '../assets/linkedin.svg'
-import { NavLink, Link } from 'react-router-dom';
+import { NavLink, Link, useLocation } from 'react-router-dom';
  
 
 function Sidebar() {
 
-   
-
-
-    const showHomeButton = true;
+    const location = useLocation();
 
     return(
     <div className='sidebar'>
-        {showHomeButton && 
-            <NavLink to='/'>
-                <button className='home-button'>HOME</button>
-            </NavLink>
-        }
 
+        {location.pathname !== '/' && (
+            <NavLink to="/">
+            <button className="home-button">HOME</button>
+            </NavLink>
+        )}
 
         <div className='sidebar-icons'>
             <Link to='https://github.com/huntkay1'><img src={GitHub2}></img></Link>
