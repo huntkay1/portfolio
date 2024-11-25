@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import App from './App.jsx'
+import Home from './Home.jsx'
 import Work from './Work.jsx'
 import About from './About.jsx'
 import Contact from './Contact.jsx'
@@ -11,7 +11,7 @@ import { AnimatePresence } from 'framer-motion';
 const routes = [
   {
     path: "/",
-    element: <App />
+    element: <Home />
   }, 
   {
     path: "/work",
@@ -32,6 +32,7 @@ const router = createBrowserRouter(routes);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <AnimatePresence>
+
       <RouterProvider router={router} />
     </AnimatePresence>
   </StrictMode>

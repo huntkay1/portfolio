@@ -110,8 +110,7 @@ a {
     }
 
     .sidebar-icons {
-        align-self: flex-start;
-        margin-top: -32vh;
+        margin-bottom: 5vh;
     }
 
     .sidebar-icons img{
