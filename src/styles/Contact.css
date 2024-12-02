@@ -7,9 +7,10 @@
 
 .contact .page-header{
     color: var(--BLUE-COLOR);
-    margin-left: 150px;
-    padding-top: 20px;
+    padding-right: 150px;
+    padding-top: 50px;
     letter-spacing: 5px;
+    align-self: flex-end;
 }
 
 label {
