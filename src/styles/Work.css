@@ -142,10 +142,11 @@
     }
 
     .card {
-        width: 90%;
+        width: 80%;
         flex-direction: column;
         padding: 0;
         margin: 0 0 5vh 0;
+
     }
 
     .hidden-content {
@@ -153,11 +154,11 @@
     }
 
     .card-info {
-        margin: 25px;
+        margin: 20px 25px;
     }
 
     .card h3 {
-        font-size: 5vh;
+        font-size: 4.5vh;
     }
 
     .card-img {
@@ -165,7 +166,7 @@
     }
 
     .project-links {
-        margin-top: 2.5vh;
+        margin-top: 2.2vh;
         flex-direction: row !important;
     }
 

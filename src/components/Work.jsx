@@ -28,7 +28,7 @@ function Work() {
         }, 
         {
             name: 'Resume Builder',
-            description: 'Download a custom resume with the given template',
+            description: 'Download a custom resume built using the given template',
             tech: ['React', 'CSS'],
             website: ' https://exquisite-kitsune-0ba888.netlify.app/',
             github: 'https://github.com/huntkay1/cv-builder-app',
