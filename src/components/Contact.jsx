@@ -37,14 +37,6 @@ function Contact() {
       <Sidebar />
 
       <div className="contact">
-        <motion.h2
-          className="page-header"
-          initial={{ opacity: 0, y: -10 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.1, duration: 0.4 }}
-        >
-          Contact
-        </motion.h2>
 
         <motion.div
           className="form-container"
@@ -107,6 +99,16 @@ function Contact() {
             </motion.button>
           </form>
         </motion.div>
+
+        <motion.h2
+          className="page-header"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.1, duration: 0.4 }}
+        >
+          Contact
+        </motion.h2>
+        
       </div>
     </motion.div>
   );

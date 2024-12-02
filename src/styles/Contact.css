@@ -1,6 +1,8 @@
 .contact {
+    height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 .contact .page-header{
@@ -41,11 +43,11 @@ form {
 }
 
 input, textarea {
-    background-color: rgba(4, 89, 77, 0.1);
+    background-color: #f9f9f9;
     border: none;
     border-radius: 25px;
     height: 65px;
-    transition: background-color ease-in-out 200ms, border ease-in-out 200ms, height ease-in-out 750ms;
+    transition: background-color ease-in-out 100ms, border ease-in-out 200ms, height ease-in-out 750ms;
     padding-left: 20px;
     font-size: 20px;
     box-sizing: border-box;
@@ -54,12 +56,10 @@ input, textarea {
 }
 
 input:hover, textarea:hover {
-    background-color: transparent;
     border: 2.5px solid var(--BLUE-COLOR)
 }
 
 input:focus, textarea:focus {
-    background-color: transparent;
     border: 2.5px solid var(--BLUE-COLOR);
     outline: none;
 }
