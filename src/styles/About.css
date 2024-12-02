@@ -73,7 +73,7 @@
     }
 
     .about-copy {
-        width: 80vw;
+        width: 70vw !important;
         margin-bottom: 2vh;
     }
 
