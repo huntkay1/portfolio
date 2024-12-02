@@ -81,6 +81,11 @@
         text-align: center;
         margin-bottom: 1vh;
     }
+
+    .tech {
+        width: 85%;
+        margin: 10px auto 40px auto;
+    }
 }
 
 /* CHANGE TO COLUMN FORMAT HERE */
@@ -124,6 +129,11 @@
 
     .tech-header {
         padding-left: 5vw;
+    }
+
+    .tech {
+        width: 80%;
+        margin: 0 auto;
     }
 
 
