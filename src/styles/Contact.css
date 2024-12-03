@@ -136,4 +136,14 @@ textarea:focus {
     }
 }
 
+@media (min-width: 350px) and (max-width: 1280px) {
+    .contact {
+        flex-direction: column-reverse;
+    }
+
+    .contact .page-header {
+        margin-top: 0px;
+    }
+}
+
 
