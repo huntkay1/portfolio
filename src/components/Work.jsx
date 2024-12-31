@@ -68,11 +68,11 @@ function Work() {
                                 <div className='project-links'>
                                     <div className='hidden-content link'>
                                         <img src={GitHub} alt="GitHub" />
-                                        <a href={item.github}>Repository</a>
+                                        <a href={item.github} target='_blank'>Repository</a>
                                     </div>
                                     <div className='hidden-content link'>
                                         <img src={Sparkle} alt="Live Site" />
-                                        <a href={item.website}>Check it out</a>
+                                        <a href={item.website} target='_blank'>Check it out</a>
                                     </div>
                                 </div>
                             </div>
